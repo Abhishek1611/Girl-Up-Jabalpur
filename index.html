@@ -1,39 +1,79 @@
-
 <!DOCTYPE html>
-<html>
-<body style="background-color:pink;">
-
-<h1>Welcome to Girl Up Jabalpur </h1>
-<h2>This website is under construction now... </h2>
-<a href="https://www.instagram.com/girlupjabalpur/">Follow Us on Instagram</a>
-
-
-<h1>ABOUT Girl Up Jabalpur</h1>
-<p>Girl Up Jabalpur is a club founded under the Girl Up Campaign, 
-<br>an initiative by the United Nations Foundation.
-</p>
-
-<p>
-The Girl Up Campaign is all about helping girls and young women realise their true 
-<br>potential and furthering the Gender Equality movement that has taken over the globe.
-</p>
-
-<p>
-Hailing from Jabalpur and having seen the plight of both rural and urban women very closely, 
-<br>we are deeply devoted to helping them. We became feminists at a very young age and want to 
-<br>do our part in furthering the Feminist movement and clear the air around it. We want to help 
-<br>create a world which is equal and is kind to one another.<br>
-Kindness is our passion, it's something we strive for in the world.<br>
-
-So this is us calling all the women and men out there, who support this cause, <br>
-to join us and help us do the best we can!
-<br>
-
-Thank you. All the love.<br>
-
-Treat people with kindness.💫<br>
-Stay safe, wear masks and practice social distancing.<br>
-</p>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="images/stars.png" id="stars" alt="">
+        <img src="images/icons8-heart-rainbow-48.png"  id="moon" alt="">
+        <img src="images/undraw_pride_y0te.svg" id="mountains_behind" alt="">
+        <h2 id="text">Girl Up Jabalpur<span>Foundation</span> </h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="images/Girl_Up_Logo-removebg-preview.png" id="mountains_front" alt="">
+    </section>
 </body>
+<script src="anime.min.js"></script>
+<script>
+    var animation = anime.timeline({
+        autoplay:false
+    });
+    animation
+    .add({
+        targets:'#btn',
+        top: '1500px',
+        duration:'600',
+        easing: 'easeOutSine'  
+    })
+    .add({
+        targets:'#stars',
+        top: '0px',
+        duration:'1000',
+        easing: 'easeInOutSine'  
+    })
+    .add({
+        targets:'#mountains_behind',
+        bottom: '0px',
+        duration:'1000',
+        easing: 'easeInOutSine'  
+    })
+    .add({
+        targets:'#moon',
+        top: '10%',
+        left:'50%',
+        duration:'1000',
+        easing: 'easeInOutSine'  
+    })
+    .add({
+        targets:'#mountains_front',
+        opacity: '1',
+        duration: 250,
+        begin: function() {
+    document.querySelector('#mountains_front').style.display = 'block';
+    
+  easing: 'easeInOutQuad'
+  },
+        top: '20%',
+        duration:'1000',
+        easing: 'easeInOutSine'  
+    })
+    .add({
+        targets:'#text',
+        marginRight: '0px',
+        duration:'1000',
+        easing: 'easeInOutSine'  
+    })
+    .add({
+        targets:'#btn',
+        top: '50%',
+        duration:'1000',
+        easing: 'easeOutSine'  
+    })
+    document.querySelector('#btn').onclick =animation.play;
+</script>
+<script src="app.js"></script>
 </html>
