@@ -15,7 +15,7 @@
     border-right: 0px solid var(--tertiary);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--primary);
+    background: var(--Purple);
     width: 0%;
     height: 35%;
     transition: 0.5 ease;
@@ -27,13 +27,15 @@
     --secondary:#fff;
     --tertiary:#fd1;
     --quartenary:black;
+    --Turquoise: #4cbfa6;
+    --SoftLilac: #f6ebf4;
+    --Purple: #482673;
+    --Orchid: #ed0b70;
+    --Digi-Denim: #301008;
 }
 body{
-    background:plum;
+    background: var(--SoftLilac);  
     font-family: "poppins",sans-serif;
-    /* background: -webkit-linear-gradient(to right, #EF629F, plum);   */
-    /* background: linear-gradient(to right,  plum,#EF629F);  */
-    /* font-family: 'Lato',sans-serif,Georgia, 'Times New Roman', Times, serif; */
     overflow-x: hidden;
 }
 html{
@@ -53,15 +55,13 @@ html{
     justify-content: center;
     align-items: center;
     font-family: "Poppins";
-    color: var(--secondary);
-    /* background: plum; */
+    color: var(--Orchid);
 }
 .Home .navelment{
     width: 80vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem; */
 }
 .Home .navelment .Logo img{
     width: 4.5rem;
@@ -75,15 +75,15 @@ html{
 .Home .navelment ul li{
     list-style: none;
     margin-left: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .Home .navelment ul .Button button{
     padding: 10px 12px;
-    font-size: 1.2rem;
-    color: var(--secondary);
-    font-weight: 500;
-    background: plum;
-    /* border-radius: 1rem; */
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 450;
+    background: var(--Orchid);
+    border-radius: 1.5rem;
     outline:none;
     border: 1px solid black;
     transition: 0.2s all ease-in-out;
@@ -105,7 +105,7 @@ html{
     left: 0;
     background-color: plum;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: all 0.25s ease-out;
 }
 .hover:hover:after {
     transform: scaleX(1);
@@ -124,11 +124,12 @@ html{
 .Home .homecontent .cont2{
     width: 40vw;
     padding: 1.5rem;
-    color: var(--secondary);
+    color: var(--Purple);
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border-radius: 36px;
     backdrop-filter: blur(10px);
+    border: 1px solid var(--Orchid);
 }
 .Home .homecontent .cont2 h2{
     font-size: 2.5rem;
@@ -162,7 +163,7 @@ html{
 /* goals */
 .Goals{
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +182,7 @@ html{
 .Goals h2{
     font-size: 2rem;
     font-weight: 400;
-    color: var(--secondary);
+    color: var(--Purple);
 }
 .Goals h2 span{
     background: #CA4246;
@@ -206,11 +207,11 @@ html{
 }
 .Goals .main .cards .img{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     overflow: hidden;
-    border: 10px solid rgba(0,0,0,0.025);
+    border: 2px solid var(--Purple);
 }
 .Goals .main .cards .img img{
     position: absolute;
@@ -226,7 +227,7 @@ html{
     justify-content: space-around;
     align-items: center;
     width: 300px;
-    height: 510px;
+    height: 500px;
     background: rgba(255, 255, 255, 0.05);
     margin: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -234,6 +235,7 @@ html{
     backdrop-filter: blur(10px);
     padding: 1.5rem;
     transition: 0.5s ease;
+    border: 1px solid var(--Orchid);
 }
 .Goals .main .cards:hover{
     transform: scale(1.05);
@@ -247,15 +249,18 @@ html{
 }
 .Goals .main .cards .info h4{
     font-size: 1.5rem;
+    font-weight: 500;
+   color: var(--Purple);
 }
 .Goals .main .cards .info p{
     font-size: 1.2rem;
     text-align: center;
     font-weight: 400;
+    color: var(--Purple);
 }
 @media only screen and (max-width: 600px) {
     .Home{
-        height: auto;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -272,12 +277,13 @@ html{
         margin: 2rem 0;
         width: 85vw;
         text-align:left;
-        font-size: 0.8rem;
-        
-        
+        font-size: 0.8rem;  
     }
     .Home .homecontent .cont2 h2{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+    .Home .homecontent .cont2 h2 span{
+        font-size: 1.8rem;
     }
     .Home .homecontent::after{
         position: absolute;
@@ -289,7 +295,17 @@ html{
         top: 20%;
         left: 40%;
         z-index: -6;
-      
-
+    }
+    .Goals{
+        height: auto;
+    }
+    .Goals h2{
+        font-size: 1.2rem;
+    }
+    .Goals h2 span{
+        font-size: 1.8rem;
+    }
+    .Home .homecontent{
+        /* margin: auto; */
     }
   }
