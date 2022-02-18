@@ -34,9 +34,11 @@ body{
     /* background: -webkit-linear-gradient(to right, #EF629F, plum);   */
     /* background: linear-gradient(to right,  plum,#EF629F);  */
     /* font-family: 'Lato',sans-serif,Georgia, 'Times New Roman', Times, serif; */
+    overflow-x: hidden;
 }
 html{
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 /* navbar */
 .Home{
@@ -129,9 +131,165 @@ html{
     backdrop-filter: blur(10px);
 }
 .Home .homecontent .cont2 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+.Home .homecontent .cont2 h2 span{
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 400;
+    font-size: 3.2rem;
 }
 .Home .homecontent .cont2 p{
     line-height: 1.6rem;
 }
+/* goals */
+.Goals{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--primary); */
+}
+.Goals .main{
+    display: flex;
+    flex-direction: row;
+    /* width: 80vw; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.Goals h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--secondary);
+}
+.Goals h2 span{
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 400;
+    font-size: 3.2rem;
+}
+.Goals .main .cards .img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.025);
+}
+.Goals .main .cards .img img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Goals .main .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 510px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    transition: 0.5s ease;
+}
+.Goals .main .cards:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease ;
+}
+.Goals .main .cards .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Goals .main .cards .info h4{
+    font-size: 1.5rem;
+}
+.Goals .main .cards .info p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+    .Home{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Home .nav{
+        display: none;
+    }
+    .Home .homecontent{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .Home .homecontent .cont2{
+        margin: 2rem 0;
+        width: 85vw;
+        text-align:left;
+        font-size: 0.8rem;
+        
+        
+    }
+    .Home .homecontent .cont2 h2{
+        font-size: 1.4rem;
+    }
+    .Home .homecontent::after{
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 100px;
+        border-radius: 100% 0% 41% 59% / 68% 0% 100% 32%   ;
+        background: linear-gradient(to right, #a8ff78, #78ffd6); 
+        top: 20%;
+        left: 40%;
+        z-index: -6;
+      
+
+    }
+  }
