@@ -80,7 +80,7 @@ html{
 .Home .navelment ul .Button button{
     padding: 10px 12px;
     font-size: 1.4rem;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 450;
     background: var(--Orchid);
     border-radius: 1.5rem;
@@ -257,6 +257,17 @@ html{
     text-align: center;
     font-weight: 400;
     color: var(--Purple);
+}
+footer{
+    background-color: var(--quartenary);
+    color: var(--SoftLilac);
+    width: 100vw;
+    height: 8vh;
+    font-size: 1.1rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media only screen and (max-width: 600px) {
     .Home{
