@@ -1,0 +1,1 @@
+Website rely on simple Html,css,Javascript and cdn for working

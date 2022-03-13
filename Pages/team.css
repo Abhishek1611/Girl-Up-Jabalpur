@@ -1,0 +1,125 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    width: 13px;
+    background: var(--secondary);
+    border-left: 0px solid var(--tertiary);
+    border-right: 0px solid var(--tertiary);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--Purple);
+    width: 0%;
+    height: 35%;
+    transition: 0.5 ease;
+    cursor:pointer;
+    border-radius: 12px;
+}
+:root{
+    --primary:#e67;
+    --secondary:#fff;
+    --tertiary:#fd1;
+    --quartenary:black;
+    --Turquoise: #4cbfa6;
+    --SoftLilac: #f6ebf4;
+    --Purple: #482673;
+    --Orchid: #ed0b70;
+    --Digi-Denim: #301008;
+}
+body{
+    background: var(--SoftLilac);  
+    font-family: "poppins",sans-serif;
+    overflow-x: hidden;
+}
+html{
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+/* navbar */
+.Home{
+    width: 100vw;
+    height: 100vh;
+}
+.Home .nav{
+    top: 0%;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    color: var(--Orchid);
+}
+.Home .navelment{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Home .navelment .Logo img{
+    width: 4.5rem;
+    height: 4rem;
+}
+.Home .navelment ul{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.Home .navelment ul li{
+    list-style: none;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+.Home .navelment ul .Button button{
+    padding: 10px 12px;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-weight: 450;
+    background: var(--Orchid);
+    border-radius: 1.5rem;
+    outline:none;
+    border: 1px solid black;
+    transition: 0.2s all ease-in-out;
+}
+.Home .navelment ul .Button button:hover{
+    transform: scale(1.05);
+}
+.hover{
+    display: inline-block;
+    position: relative;
+}
+.hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: plum;
+    transform-origin: bottom right;
+    transition: all 0.25s ease-out;
+}
+.hover:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.Home .homecontent{
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
