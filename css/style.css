@@ -168,7 +168,7 @@ html{
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: 'ALTERNATE TEXT';
+  content: 'Contact us';
   display: block;
   position: absolute;
   top: 0;
@@ -265,6 +265,7 @@ html{
 }
 .Home .homecontent{
     width: 100vw;
+    height: auto;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -315,7 +316,7 @@ html{
 /* goals */
 .Goals{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -410,6 +411,104 @@ html{
     font-weight: 400;
     color: var(--Purple);
 }
+
+
+
+/* Spotify */
+.spotifysection{
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.spotifysection h2{
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+.spotifysection .head2{
+  background: #CA4246;
+  background-color: #CA4246;
+  background: conic-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  background-size: 57%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+.spotifysection {
+  /* background: linear-gradient(10deg,#af590d, #181818) ; */
+  /* filter: brightness(105%); */
+  /* opacity: 80%; */
+  padding: 2rem;
+  
+  /* opacity: 0.5; */
+
+}
+.spotifysection h2{
+  color: #fff;
+}
+.SpotifyBox .upper{
+  min-height: 30vh;
+  display: flex;
+}
+
+.SpotifyBox {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+  border-radius: 36px;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.SpotifyBox .upper .head{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.SpotifyBox .upper .head h2{
+  font-weight: 600;
+  font-size: 4.4rem;
+}
+.SpotifyBox .upper .head p{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.SpotifyBox  .lower{
+  
+  padding: 2rem;
+}
+.spotifysection .SpotifyBox  .lower p{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.SpotifyBox .upper .head  i{
+  color: #5d6;
+    font-size: 4rem;
+    /* background-color: black; */
+    /* padding: 0.2rem; */
+    /* border: 1px solid black; */
+    border-radius: 4rem;
+    background-color: inherit;
+}
 footer{
     background-color: var(--quartenary);
     color: var(--SoftLilac);
@@ -471,4 +570,7 @@ footer{
     .Home .homecontent{
         /* margin: auto; */
     }
+    .Home .homecontent .cont2 p{
+      font-size: 11px;
+  }
   }
