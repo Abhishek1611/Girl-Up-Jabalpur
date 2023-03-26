@@ -1,58 +1,68 @@
-*{
-    margin:0%;
-    padding:0%;
-    box-sizing: border-box;
-}
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
     width: 13px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     width: 13px;
     background: var(--secondary);
     border-left: 0px solid var(--tertiary);
     border-right: 0px solid var(--tertiary);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: var(--Purple);
     width: 0%;
     height: 35%;
     transition: 0.5 ease;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 12px;
 }
-:root{
-    --primary:#e67;
-    --secondary:#fff;
-    --tertiary:#fd1;
-    --quartenary:black;
+
+:root {
+    --primary: #e67;
+    --secondary: #fff;
+    --tertiary: #fd1;
+    --quartenary: black;
     --Turquoise: #4cbfa6;
     --SoftLilac: #f6ebf4;
     --Purple: #482673;
     --Orchid: #ed0b70;
     --Digi-Denim: #301008;
 }
-body{
-    background: var(--SoftLilac);  
-    font-family: "poppins",sans-serif;
+
+body {
+    background: var(--SoftLilac);
+    font-family: "poppins", sans-serif;
     overflow-x: hidden;
 }
-html{
+
+html {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
 }
+
 /* navbar */
-.Home{
+.Home {
     width: 100vw;
     height: 100vh;
 }
-.Home .nav{
+
+.Home .nav {
     top: 0%;
     width: 100vw;
     height: 15vh;
@@ -62,44 +72,52 @@ html{
     font-family: "Poppins";
     color: var(--Orchid);
 }
-.Home .navelment{
+
+.Home .navelment {
     width: 80vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.Home .navelment .Logo img{
+
+.Home .navelment .Logo img {
     width: 4.5rem;
     height: 4rem;
 }
-.Home .navelment ul{
+
+.Home .navelment ul {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
-.Home .navelment ul li{
+
+.Home .navelment ul li {
     list-style: none;
     margin-left: 1rem;
     font-size: 1.2rem;
 }
-.Home .navelment ul .Button button{
+
+.Home .navelment ul .Button button {
     padding: 10px 12px;
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
     font-weight: 450;
     background: var(--Orchid);
     border-radius: 1.5rem;
-    outline:none;
+    outline: none;
     border: 1px solid black;
     transition: 0.2s all ease-in-out;
 }
-.Home .navelment ul .Button button:hover{
+
+.Home .navelment ul .Button button:hover {
     transform: scale(1.05);
 }
-.hover{
+
+.hover {
     display: inline-block;
     position: relative;
 }
+
 .hover:after {
     content: '';
     position: absolute;
@@ -112,14 +130,68 @@ html{
     transform-origin: bottom right;
     transition: all 0.25s ease-out;
 }
+
 .hover:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-.Home .homecontent{
+
+.Home .homecontent {
     width: 100vw;
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.color {
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(#CA4246 16.666%,
+            #E16541 16.666%,
+            #E16541 33.333%,
+            #F18F43 33.333%,
+            #F18F43 50%,
+            #8B9862 50%,
+            #8B9862 66.666%,
+            #476098 66.666%,
+            #476098 83.333%,
+            #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 3.2rem;
+}
+.teamsection{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.teamsection .teamcardsection{
+/* background-color: #4cbfa6; */
+display: flex;
+flex-wrap: wrap;
+max-width: 95vw;
+}
+.teamsection .teamcardsection .teamcards{
+background-color: #ffffff;
+padding: 1rem;
+margin: 1rem;
+display: flex;
+width: 45vw;
+}
+.teamsection .teamcardsection .teamcards img{
+    max-width: 250px;
+}
+.teamsection .teamcardsection .teamcards .content{
+    padding: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    .Home .nav {
+        display: none;
+    }
 }
