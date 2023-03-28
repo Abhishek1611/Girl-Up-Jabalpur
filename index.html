@@ -14,13 +14,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="myfunction()">
+  <!-- <div id="loading"></div> -->
+  
+  <div id="loader">
+    <!-- <img src="./download.png" alt="Loading..."> -->
+    <lottie-player src="./assets/loader.json" background="transparent"
+      speed="1" style="width: 100vw; height: 100vh;" loop autoplay></lottie-player>
+  </div>
   <div class="back">
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
 
   </div>
+  
   <section class="Home">
     <!-- Navbar -->
     <div class="nav">
@@ -47,7 +55,7 @@
     <!-- Navbar -->
 
     <!-- Sidebar -->
-   
+
     <!-- Sidebar -->
 
 
@@ -73,7 +81,9 @@
 
       <div class="cards">
         <div class="img">
-          <img src="images/hk.png" alt="" />
+          <!-- <img src="images/hk.png" alt="" /> -->
+          <lottie-player class="lotpic" src="https://assets3.lottiefiles.com/packages/lf20_BnOF3L.json"
+            background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>
         </div>
         <div class="info">
           <h4>Youth-Centered</h4>
@@ -81,7 +91,11 @@
         </div>
       </div>
       <div class="cards">
-        <div class="img"><img src="images/hannah-busing-Zyx1bK9mqmA-unsplash (1).jpg" alt="" /></div>
+        <div class="img">\
+          <!-- <img src="images/hannah-busing-Zyx1bK9mqmA-unsplash (1).jpg" alt="" /> -->
+          <lottie-player class="lotpic" src="https://assets4.lottiefiles.com/packages/lf20_lkayy4dp.json"
+            background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>
+        </div>
         <div class="info">
           <h4>Passionate Action</h4>
           <p>Education for all. Majorly issues of women, LGBTQIA+ community, gender equality.</p>
@@ -89,7 +103,9 @@
       </div>
       <div class="cards">
         <div class="img">
-          <img src="images/jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="" />
+          <!-- <img src="images/jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="" /> -->
+          <lottie-player class="lotpic" src="https://assets6.lottiefiles.com/packages/lf20_9D7slCa5QH.json"
+            background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>
         </div>
         <div class="info">
           <h4>Gender equality </h4>
@@ -136,6 +152,7 @@
 </body>
 
 <script src="app.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <!-- </html>
 <li><i class="fab fa-instagram"></i></li>
 <li><i class="fab fa-linkedin-in"></i></li>
