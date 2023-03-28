@@ -87,7 +87,13 @@ html {
     transform: translateX(25%);
   }
 }
-
+.loader{
+  width: 100vw;
+  height: 100vh;
+  /* background: black url(https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif) center; */
+  position: fixed;
+  z-index: 1000;
+}
 /* back */
 /* navbar */
 .Home {
@@ -411,6 +417,14 @@ html {
 }
 
 .Goals .main .cards .img img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Goals .main .cards .img .lotpic {
   position: absolute;
   top: 0%;
   left: 0%;
