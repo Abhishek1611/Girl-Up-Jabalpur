@@ -175,7 +175,10 @@ html {
 /* background-color: #4cbfa6; */
 display: flex;
 flex-wrap: wrap;
-max-width: 95vw;
+justify-content: flex-start;
+align-items: center;
+max-width: 100vw;
+margin: 1rem;
 }
 .teamsection .teamcardsection .teamcards{
 background-color: #ffffff;
@@ -183,9 +186,14 @@ padding: 1rem;
 margin: 1rem;
 display: flex;
 width: 45vw;
+max-width: 45vw;
+border-radius: 2rem;
 }
 .teamsection .teamcardsection .teamcards img{
-    max-width: 250px;
+    max-width: 220px;
+    padding: 0.1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
 }
 .teamsection .teamcardsection .teamcards .content{
     padding: 1rem;
@@ -193,5 +201,13 @@ width: 45vw;
 @media only screen and (max-width: 600px) {
     .Home .nav {
         display: none;
+    }
+    .teamsection .teamcardsection .teamcards{
+        width: 90vw;
+        max-width: 90vw;
+    }
+    .teamsection .teamcardsection .teamcards img{
+        max-width: 40vw;
+        aspect-ratio: auto;
     }
 }
