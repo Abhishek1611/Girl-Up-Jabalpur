@@ -1,30 +1,42 @@
-.aboutus{
+.aboutus {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
-.aboutus .abouthead{
+
+.aboutus .abouthead {
     height: 40vh;
     display: flex;
-   
+
 }
-.aboutus .abouthead .left{
+
+.aboutus .abouthead .left {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem;
     padding: 1rem;
 }
-.aboutus .abouthead .left h2{
-    font-weight: 800;
+
+.aboutus .abouthead .left h2 {
     font-size: 2.2rem;
-    color:var(--Orchid);
+    color: var(--Orchid);
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(#CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
 }
-.aboutus .abouthead .left h2 span{
-    color:var(--Purple);
+
+/* .aboutus .abouthead .left h2 span {
+    color: var(--Purple);
     color: plum;
-}
-.aboutus .abouthead .right{
+} */
+
+.aboutus .abouthead .right {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -33,17 +45,99 @@
     max-width: 60vw;
     color: var(--Purple);
 }
-.aboutus .aboutimage{
+
+.aboutus .aboutimage {
     width: 100vw;
     /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.aboutus .aboutimage img{
+
+.aboutus .aboutimage img {
     position: relative;
     max-height: 80vh;
     width: 80vw;
     overflow: hidden;
     border: 2px solid var(--Purple);
+}
+
+.aboutus2 {
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.aboutus2 .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+}
+.aboutus2 .content p{
+    color: #482673;
+}
+
+.aboutus2 .content h2 {
+    font-size: 2.2rem;
+    color: var(--Orchid);
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(#CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .Home {
+        min-height: 100vh;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .aboutus .abouthead{
+        max-width: 90vw;
+    }
+    .aboutus .abouthead .right {
+        font-size: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutus .abouthead .right p {
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .aboutus .abouthead .left h2 {
+        font-size: 1.2rem;
+    }
+
+    .aboutus .aboutimage {
+        height: 30vh;
+    }
+
+    .aboutus2 {
+        flex-wrap: wrap;
+        max-width: 90vw;
+    }
+    .aboutus2 .content{
+        flex-wrap: wrap;
+    }
+    .aboutus2 .content p {
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 0.6rem;
+        padding: 1rem;
+    }
 }
