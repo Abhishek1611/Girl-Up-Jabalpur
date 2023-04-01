@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./Contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GirlUp Jabalpur</title>
+</head>
+
+<body onload="myfunction()">
+    <div id="loader">
+        <!-- <img src="./download.png" alt="Loading..."> -->
+        <lottie-player src="../assets/loader.json" background="transparent" speed="1"
+            style="width: 100vw; height: 100vh;" loop autoplay></lottie-player>
+    </div>
+    <div class="Home">
+        <div class="nav">
+            <div class="navelment">
+                <div class="Logo">
+                    <img src="../images/Girl_Up_Logo-removebg-preview.png" alt="" />
+                </div>
+                <div>
+                    <ul>
+                        <li class="hover"><a href="../index.html">Home</a></li>
+                        <li class="hover"><a href="About.html">About us</a></li>
+                        <li class="hover">Events</li>
+                        <!-- <li class="hover">Our Project</li> -->
+                        <li class="hover"> <a href="TeamMember.html"> Our Team</a></li>
+                        <li class="button-49">
+                            <a href="Contact.html">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+
+        </div>
+        <section class="contact-us" id="contact-section">
+            <form id="contact" action="https://formspree.io/f/xyyvlrbl" method="POST">
+
+                <div class="section-heading">
+                    <h4>Contact us</h4>
+                </div>
+
+                <div class="inputField">
+                    <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>
+                    <span class="valid_info_name"></span>
+                </div>
+
+                <div class="inputField">
+                    <input type="Email" name="email" id="email" placeholder="Your email" required="" />
+                    <span class="valid_info_email"></span>
+                </div>
+
+                <div class="inputField">
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    <span class="valid_info_message"></span>
+                </div>
+
+                <div class="inputField btn">
+                    <button type="submit" id="form-submit" class="main-gradient-button" disabled>Send a message</button>
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+
+</body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="../app.js"></script>
+<script src="../contact.js"></script>
+
+</html>
